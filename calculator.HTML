@@ -7,12 +7,12 @@
             body {
                 background-color: white;
             }
-            input[type=button] {
+            .buttons {
                 margin-left: 30px;
                 margin-bottom: 20px;
                 width: 13%;
                 height: 13%;
-                font-weight: 700;                                                   /*폰트의 굵기*/
+                font-weight: 700;                    /*폰트의 굵기*/
                 font-size: 50px; 
                 border-radius: 15px;
                 border-color:rgb(255, 255, 255);
@@ -130,45 +130,45 @@
         <div class = "text_container" id = "text_memory">:</div>
         <input  name = ''id = "text_box"  placeholder = '0' type = "text">
             <div class = "calculator_box">
-                <div  id = "top_buttons">
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  id = "calculation_button" value = '(' type = 'button' onclick = calculator.input_number(value) >
-                    <input  id = "calculation_button" value = ')' type = 'button' onclick = calculator.input_number(value) >
-                    <input  value = 'CE' type = 'button' onclick = calculator.backspace() >
-                    <input  value = 'C' type = 'button' onclick =  calculator.delete_button() >
-                </div>     
+                <div id = "top_buttons">
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" id = "calculation_button" value = '(' type = 'button' onclick = calculator.input_number(value) >
+                    <input class = "buttons" id = "calculation_button" value = ')' type = 'button' onclick = calculator.input_number(value) >
+                    <input class = "buttons" value = 'CE' type = 'button' onclick = calculator.backspace() >
+                    <input class = "buttons" value = 'C' type = 'button' onclick =  calculator.delete_button() >
+                </div>                    
                 <div>
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  id = "num_button" value = '7' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "num_button" value = '8' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "num_button" value = '9' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "calculation_button" value = '/' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" id = "num_button" value = '7' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "num_button" value = '8' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "num_button" value = '9' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "calculation_button" value = '/' type = 'button' onclick = calculator.input_number(value)>
                 </div>
                 <div>
-                    <input  id = "calculation_button" value = 'ㅠ' type = 'button' onclick = calculator.input_number(Math.PI.toFixed(2))>
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  id = "num_button" value = '4' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "num_button" value = '5' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "num_button" value = '6' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "calculation_button" value = '*' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "calculation_button" value = 'ㅠ' type = 'button' onclick = calculator.input_number(Math.PI.toFixed(2))>
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" id = "num_button" value = '4' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "num_button" value = '5' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "num_button" value = '6' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "calculation_button" value = '*' type = 'button' onclick = calculator.input_number(value)>
                 </div>
                 <div>
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  id = "num_button" value = '1' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "num_button" value = '2' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "num_button" value = '3' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "calculation_button" value = '-' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" id = "num_button" value = '1' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "num_button" value = '2' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "num_button" value = '3' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "calculation_button" value = '-' type = 'button' onclick = calculator.input_number(value)>
                 </div>
                 <div>
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  value = ' ' type = 'button' onclick = temp_button() >
-                    <input  id = "num_button" value = '0' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "num_button" value = '.' type = 'button' onclick = calculator.input_number(value)>
-                    <input  id = "equal_button" value = '=' type = 'button' onclick = calculator.equal_button() >
-                    <input  id = "calculation_button" value = '+' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" value = ' ' type = 'button' onclick = temp_button() >
+                    <input class = "buttons" id = "num_button" value = '0' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "num_button" value = '.' type = 'button' onclick = calculator.input_number(value)>
+                    <input class = "buttons" id = "equal_button" value = '=' type = 'button' onclick = calculator.equal_button() >
+                    <input class = "buttons" id = "calculation_button" value = '+' type = 'button' onclick = calculator.input_number(value)>
                 </div>
         
     </body>
